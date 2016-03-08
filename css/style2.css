@@ -1,0 +1,104 @@
+body {
+    background: #252831;
+    width: auto;
+    height: auto;
+}
+
+/* Footer */
+
+.form-control {
+    background-color: #1C2937;
+    color: #fff;
+    border-color: #111111;
+    outline: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.form-control:hover {
+    border-color: #4cb5ba;
+}
+
+.form-control:active{
+    border-color: #4cb5ba;
+}
+
+.form-control:focus{
+    border-color: #4cb5ba;
+}
+
+input:-webkit-autofill {
+    outline: none;
+    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-text-fill-color: #fff !important;
+    border-color: #4cb5ba;
+
+}
+
+input:-webkit-autofill:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-text-fill-color: #fff !important;
+    border-color: #4cb5ba;
+}
+
+input:-webkit-autofill:hover {
+    outline: none;
+    -webkit-box-shadow: 0 0 0px 1000px #b70800 inset;
+    -webkit-text-fill-color: #fff !important;
+    border-color: #4cb5ba;
+}
+
+input:-webkit-autofill:active {
+    outline: none;
+    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-text-fill-color: #fff !important;
+    border-color: #4cb5ba;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    vertical-align: middle;
+    height: 50px;
+    background: rgb(63, 76, 107); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(42, 62, 82) 0%, rgb(28, 41, 55) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(42, 62, 82) 0%, rgba(28, 41, 55, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(42, 62, 82) 0%, rgba(28, 41, 55, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#337AB7', endColorstr='#3F4C6B', GradientType=0); /* IE6-9 */
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 60px 15px 0;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+code {
+    font-size: 80%;
+}

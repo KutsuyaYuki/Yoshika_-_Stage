@@ -1,0 +1,13 @@
+.navbar-fixed-bottom {
+    vertical-align: middle;
+    height: 50px;
+    background: rgb(63, 76, 107); /* Old browsers */
+    background: -moz-linear-gradient(top, rgb(51, 122, 183) 0%, rgba(63, 76, 107, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgb(51, 122, 183) 0%, rgba(63, 76, 107, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgb(51, 122, 183) 0%, rgba(63, 76, 107, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#337AB7', endColorstr='#3F4C6B', GradientType=0); /* IE6-9 */
+}
+
+.navbar.navbar-default.navbar-fixed-bottom p.text-center {
+    line-height: 50px;
+}

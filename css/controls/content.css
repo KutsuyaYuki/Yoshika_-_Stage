@@ -1,0 +1,55 @@
+.container {
+    width: 100%;
+    text-align: left;
+    color: #fff;
+}
+
+.panel.panel-default {
+    background-color: #337ab7;
+}
+
+.panel > .panel-heading {
+    background: #2a6598 none;
+    color: white;
+    border-color: #252831;
+}
+
+.panel-heading {
+    border-radius: 0;
+}
+
+.panel-default {
+    border-color: #252831;
+    background-color: #252831;
+    color: #fff;
+    width: 100%;
+}
+
+.wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.content {
+    background-color: #252831;
+    float: right;
+    width: 100%;
+}
+
+.cleared {
+    clear: both;
+}
+
+.input-group-sm{
+    margin-left: 3px;
+}
+
+a {
+    color: #45acff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
