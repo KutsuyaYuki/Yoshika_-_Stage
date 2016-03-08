@@ -1,6 +1,6 @@
 .btn-submit {
     color: #FFFFFF;
-    background-color: #2A6597;
+    background: rgb(42, 101, 151);
     border-color: #000;
     width: 100%;
 }
@@ -11,7 +11,7 @@
 .btn-submit.active,
 .open .dropdown-toggle.btn-submit {
     color: #FFFFFF;
-    background-color: #1F4C71;
+    background: rgb(42, 101, 151);
     border-color: #000;
     outline:0;
 }

@@ -45,17 +45,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <!-- This PHP script makes sure the "active" button looks pressed !-->
                     <li<?php if ($thisPage == "Home") echo " class=\"active\""; ?>><a href="private.php">Home</a></li>
-                    <li<?php if ($thisPage == "Settings") echo " class=\"active\""; ?>><a
-                            href="settings.php">Settings</a></li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pagina's<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">NAW Lijst</a></li>
-                    </ul>
-                    </li>
-
                     <li<?php if ($thisPage == "Logout") echo " class=\"active\""; ?>><a href="logout.php">Logout</a>
-                    </li>
                     </li>
                 </ul>
             <?php } ?>
