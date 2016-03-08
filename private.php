@@ -29,11 +29,6 @@ if (empty($_SESSION['user'])) {
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen"/>
     <link href="css/bootstrap-editable.css" rel="stylesheet" type="text/css" media="screen"/>
-    <script type="text/javascript">
-        document.getElementById('buttonID').onclick = function () {
-            document.getElementById('theme_css').href = '../../css/style2.css';
-        };
-    </script>
     <title>Yuki's Site ~</title>
 </head>
 <body>
