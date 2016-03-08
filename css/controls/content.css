@@ -5,17 +5,20 @@
 }
 
 .panel.panel-default {
-    background-color: #337ab7;
+    background: rgb(31, 31, 31); /* Fall-back for browsers that don't support rgba */
+    background: rgba(21, 21, 21, .70);
+    border-radius: 10px;
+    border: 2px solid inherit;
 }
 
+.panel-heading,
 .panel > .panel-heading {
-    background: #2a6598 none;
     color: white;
-    border-color: #252831;
-}
-
-.panel-heading {
-    border-radius: 0;
+    border: 0px solid #2a6598;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: rgb(12, 12, 12); /* Fall-back for browsers that don't support rgba */
+    background: rgba(21, 21, 21, 0.75);
 }
 
 .panel-default {
@@ -31,7 +34,7 @@
 }
 
 .content {
-    background-color: #252831;
+    /*background-color: #252831;*/
     float: right;
     width: 100%;
 }
