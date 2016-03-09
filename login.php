@@ -55,12 +55,12 @@ if (!empty($_POST)) {
             <div class="panel-body">
                 <form class="form-horizontal" action="login.php" method="post">
                     <div class="form-group">
-                        <div class="col-sm-2">
+                        <div class="col-centered">
                             <input type="text" name="user" class="form-control" id="inputUsername" placeholder="Username">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="col-sm-2">
+                        <div class="col-centered">
                             <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
                         </div>
                     </div>
@@ -74,7 +74,7 @@ if (!empty($_POST)) {
                     </div>
                     !-->
                     <div class="form-group">
-                        <div class="col-sm-2">
+                        <div class="col-centered">
                             <button type="submit" class="btn btn-submit">Sign in</button>
                         </div>
                     </div>

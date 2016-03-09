@@ -109,3 +109,9 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }
+
+.col-centered{
+    margin: 0 auto;
+    float: none;
+    width: 300px;
+}
