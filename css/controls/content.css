@@ -11,9 +11,9 @@
     border: 1px solid rgba(0, 0, 0, .5);
     width: 75%;
     margin: 0 auto;
-    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
 }
 
 .panel-heading,
@@ -48,7 +48,7 @@
     clear: both;
 }
 
-.input-group-sm{
+.input-group-sm {
     margin-left: 3px;
 }
 
@@ -62,7 +62,6 @@ a:hover {
     text-decoration: none;
 }
 
-
 .form-control {
     background-color: rgba(35, 35, 35, 1);
     color: #fff;
@@ -73,18 +72,18 @@ a:hover {
 }
 
 .form-control:hover {
-    border-color: #4cb5ba;
     background-color: rgba(35, 35, 35, 1);
+    border-color: #2e595d;
 }
 
-.form-control:active{
-    border-color: #4cb5ba;
+.form-control:focus {
     background-color: rgba(35, 35, 35, 1);
+    border-color: #2e595d;
 }
 
-.form-control:focus{
-    border-color: #4cb5ba;
+.form-control:active {
     background-color: rgba(35, 35, 35, 1);
+    border-color: #4cb5ba;
 }
 
 input:-webkit-autofill {
@@ -99,24 +98,24 @@ input:-webkit-autofill:focus {
     outline: none;
     -webkit-box-shadow: 0 0 0px 1000px rgba(35, 35, 35, 1) inset;
     -webkit-text-fill-color: #fff !important;
-    border-color: #439094;
+    border-color: #2e595d;
 }
 
 input:-webkit-autofill:hover {
     outline: none;
     -webkit-box-shadow: 0 0 0px 1000px rgba(35, 35, 35, 1) inset;
     -webkit-text-fill-color: #fff !important;
-    border-color: #439094;
+    border-color: #2e595d;
 }
 
 input:-webkit-autofill:active {
     outline: none;
     -webkit-box-shadow: 0 0 0px 1000px rgba(35, 35, 35, 1) inset;
     -webkit-text-fill-color: #fff !important;
-    border-color: #439094;
+    border-color: #4cb5ba;
 }
 
-.col-centered{
+.col-centered {
     margin: 0 auto;
     float: none;
     width: 300px;

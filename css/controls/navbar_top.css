@@ -71,12 +71,18 @@
 }
 
 .navbar-default .navbar-toggle {
-    background-color: #000000;
+    background-color: rgb(69, 69, 69);
+    border-color: #000000;
 }
 
-.navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #000000;
+    background-color: rgb(69, 69, 69);
+    border-color: #000000;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background: rgba(21, 21, 21, 0.75);
+    border-color: #000000;
 }
 
 .navbar-default .navbar-toggle .icon-bar {

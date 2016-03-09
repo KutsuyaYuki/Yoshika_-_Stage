@@ -102,21 +102,21 @@ thead > tr > th > div.th-inner.sortable.both {
 
 .search > .form-control:focus {
     outline: none;
-    -webkit-box-shadow: 0 0 0 1000px #1C2937 inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }
 
 .search > .form-control:hover {
     outline: none;
-    -webkit-box-shadow: 0 0 0 1000px #1C2937 inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }
 
 .search > .form-control:active {
     outline: none;
-    -webkit-box-shadow: 0 0 0 1000px #1C2937 inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }

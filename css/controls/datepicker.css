@@ -425,7 +425,7 @@
 .datepicker .prev:hover,
 .datepicker .next:hover,
 .datepicker tfoot tr th:hover {
-    background: #eeeeee;
+    background-color: rgb(78, 78, 78);
 }
 .datepicker .cw {
     font-size: 10px;
@@ -469,4 +469,8 @@
     border: 1px solid #ccc;
     margin-left: -5px;
     margin-right: -5px;
+}
+
+body > div.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top{
+    background-color: rgba(21, 21, 21, 1);
 }
