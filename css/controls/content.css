@@ -8,9 +8,12 @@
     background: rgb(31, 31, 31); /* Fall-back for browsers that don't support rgba */
     background: rgba(21, 21, 21, .70);
     border-radius: 10px;
-    border: 2px solid inherit;
+    border: 0px solid rgba(0, 0, 0, .8);
     width: 75%;
     margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 }
 
 .panel-heading,
@@ -83,7 +86,7 @@ a:hover {
 
 input:-webkit-autofill {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 
@@ -91,21 +94,21 @@ input:-webkit-autofill {
 
 input:-webkit-autofill:focus {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }
 
 input:-webkit-autofill:hover {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }
 
 input:-webkit-autofill:active {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }
