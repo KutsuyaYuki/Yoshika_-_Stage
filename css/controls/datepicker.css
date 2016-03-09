@@ -93,6 +93,7 @@
     -moz-border-radius: 4px;
     border-radius: 4px;
     border: none;
+    color: #c9c9c9;
 }
 .table-striped .datepicker table tr td,
 .table-striped .datepicker table tr th {
@@ -100,8 +101,10 @@
 }
 .datepicker table tr td.day:hover,
 .datepicker table tr td.day.focused {
-    background: #05bcff;
+    background: #0582b5;
     cursor: pointer;
+    color: #000;
+    font-weight: bold;
 }
 .datepicker table tr td.old,
 .datepicker table tr td.new {
