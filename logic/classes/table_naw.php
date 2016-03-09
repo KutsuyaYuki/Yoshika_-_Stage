@@ -91,5 +91,4 @@
         ?>
         </tbody>
     </table>
-    <button id="buttonID">Mew</button>
 </div>

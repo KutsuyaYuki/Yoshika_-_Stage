@@ -87,8 +87,8 @@ thead > tr > th > div.th-inner.sortable.both {
     padding-left: 3px;
     padding-right: 3px;
     margin-top: -21px;
-    background-color: #214e75;
-    border: 1px solid #22365e;
+    background-color: rgba(21, 21, 21, 1);
+    border: 1px solid rgba(35, 35, 35, 1);
 }
 
 .pagination-info {
@@ -97,7 +97,7 @@ thead > tr > th > div.th-inner.sortable.both {
 .search > .form-control {
     outline: none;
     -webkit-text-fill-color: #fff !important;
-    border-color: #4cb5ba;
+    border-color: #111111;
 }
 
 .search > .form-control:focus {
@@ -125,14 +125,38 @@ thead > tr > th > div.th-inner.sortable.both {
 
 div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > button {
     margin-left: 4px;
-    background-color: #214e75;
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(35, 35, 35, 1);
     color: #fff;
-    border-color: #317eb8;
-    line-height: 6px;
+    line-height: 12px;
 }
 
 div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > button:hover {
-    background-color: #214e75;
+    background-color: rgba(21, 21, 21, 1);
+    color: #fff;
+}
+
+body > div.wrapper > div.content > div > div.panel-body > div > div.bootstrap-table > div.fixed-table-container > div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > button{
+    line-height: 10px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+div.fixed-table-container > div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul{
+    background-color: rgba(21, 21, 21, 1);
+    border: 1px solid rgba(35, 35, 35, 1);
+    line-height: 8px;
+}
+div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul > li.active > a{
+    color: #a8a8a8;
+}
+div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul > li > a{
+    background-color: rgba(21, 21, 21, 1);
+    color: #fff;
+}
+
+div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul > li > a:hover{
+    background-color: rgba(69, 69, 69, 0.8);
     color: #fff;
 }
 
