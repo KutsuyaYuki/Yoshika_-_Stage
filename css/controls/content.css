@@ -64,7 +64,7 @@ a:hover {
 
 
 .form-control {
-    background-color: #1C2937;
+    background-color: rgba(35, 35, 35, 1);
     color: #fff;
     border-color: #111111;
     outline: none;
@@ -74,47 +74,58 @@ a:hover {
 
 .form-control:hover {
     border-color: #4cb5ba;
+    background-color: rgba(35, 35, 35, 1);
 }
 
 .form-control:active{
     border-color: #4cb5ba;
+    background-color: rgba(35, 35, 35, 1);
 }
 
 .form-control:focus{
     border-color: #4cb5ba;
+    background-color: rgba(35, 35, 35, 1);
 }
 
 input:-webkit-autofill {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(35, 35, 35, 1) inset;
     -webkit-text-fill-color: #fff !important;
-    border-color: #4cb5ba;
+    border-color: #4b4b4b;
 
 }
 
 input:-webkit-autofill:focus {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(35, 35, 35, 1) inset;
     -webkit-text-fill-color: #fff !important;
-    border-color: #4cb5ba;
+    border-color: #439094;
 }
 
 input:-webkit-autofill:hover {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(35, 35, 35, 1) inset;
     -webkit-text-fill-color: #fff !important;
-    border-color: #4cb5ba;
+    border-color: #439094;
 }
 
 input:-webkit-autofill:active {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(35, 35, 35, 1) inset;
     -webkit-text-fill-color: #fff !important;
-    border-color: #4cb5ba;
+    border-color: #439094;
 }
 
 .col-centered{
     margin: 0 auto;
     float: none;
     width: 300px;
+}
+
+
+@media (max-width: 768px) {
+    .col-centered {
+        margin: 0 auto;
+        width: 70%;
+    }
 }
