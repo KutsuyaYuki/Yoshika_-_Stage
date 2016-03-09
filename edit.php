@@ -271,7 +271,8 @@ if (!empty($_POST)) {
 <div class="cleared"></div>
 </div>
 <!-- Footer !-->
-<footer class="footer"></footer>
+<?php include('logic/classes/bottom.inc'); ?>
+<!-- END: Footer !-->
 
 </body>
 </html>

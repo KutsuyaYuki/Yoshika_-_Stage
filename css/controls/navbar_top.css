@@ -41,7 +41,6 @@
 
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-    color: #5afaff;
     background-color: #000000;
     color: white;
 }
@@ -61,7 +60,7 @@
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #5afaff;
-    background-color: #252831;
+    background-color: rgb(69, 69, 69);
 }
 
 .navbar-default .navbar-nav > .open > a,

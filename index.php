@@ -38,44 +38,15 @@ if (!empty($_SESSION['user'])) {
             <div class="panel-heading">
                 <h3 class="panel-title">Login</h3>
             </div>
-            <div class="panel-body">
-                <form class="form-horizontal" action="login.php" method="post">
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <input type="text" name="user" class="form-control" id="inputUsername" placeholder="Username">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
-                        </div>
-                    </div>
-                    <!--
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <div class="checkbox">
-                                <input type="checkbox" id="remember"/><label for="remember">Remember me</label>
-                            </div>
-                        </div>
-                    </div>
-                    !-->
-                    <div class="form-group">
-                        <div class="col-sm-2">
-                            <button type="submit" class="btn btn-submit">Sign in</button>
-                        </div>
-                    </div>
-                </form>
+            <div class="panel-body"><p>Yuki's stage opdracht owo!</p>
             </div>
         </div>
     </div>
     <div class="cleared"></div>
 </div>
 <!-- Footer !-->
-<nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-        <p class="text-center">Copyright stuff ~</p>
-    </div>
-</nav>
+<?php include('logic/classes/bottom.inc'); ?>
+<!-- END: Footer !-->
 
 </body>
 </html>

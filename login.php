@@ -85,11 +85,8 @@ if (!empty($_POST)) {
     <div class="cleared"></div>
 </div>
 <!-- Footer !-->
-<nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-        <p class="text-center">Copyright stuff ~</p>
-    </div>
-</nav>
+<?php include('logic/classes/bottom.inc'); ?>
+<!-- END: Footer !-->
 
 </body>
 </html>
