@@ -9,6 +9,8 @@
     background: rgba(21, 21, 21, .70);
     border-radius: 10px;
     border: 2px solid inherit;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .panel-heading,
@@ -55,4 +57,55 @@ a {
 a:hover {
     color: #ffffff;
     text-decoration: none;
+}
+
+
+.form-control {
+    background-color: #1C2937;
+    color: #fff;
+    border-color: #111111;
+    outline: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.form-control:hover {
+    border-color: #4cb5ba;
+}
+
+.form-control:active{
+    border-color: #4cb5ba;
+}
+
+.form-control:focus{
+    border-color: #4cb5ba;
+}
+
+input:-webkit-autofill {
+    outline: none;
+    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-text-fill-color: #fff !important;
+    border-color: #4cb5ba;
+
+}
+
+input:-webkit-autofill:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-text-fill-color: #fff !important;
+    border-color: #4cb5ba;
+}
+
+input:-webkit-autofill:hover {
+    outline: none;
+    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-text-fill-color: #fff !important;
+    border-color: #4cb5ba;
+}
+
+input:-webkit-autofill:active {
+    outline: none;
+    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
+    -webkit-text-fill-color: #fff !important;
+    border-color: #4cb5ba;
 }

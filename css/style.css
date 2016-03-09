@@ -18,6 +18,8 @@ body {
     background-position: left top !important;
     width: auto;
     height: auto;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 body:before {
     content: "";
@@ -37,66 +39,12 @@ body:before {
 
 /* Footer */
 
-.form-control {
-    background-color: #1C2937;
-    color: #fff;
-    border-color: #111111;
-    outline: none;
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
-
-.form-control:hover {
-    border-color: #4cb5ba;
-}
-
-.form-control:active{
-    border-color: #4cb5ba;
-}
-
-.form-control:focus{
-    border-color: #4cb5ba;
-}
-
-input:-webkit-autofill {
-    outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
-    -webkit-text-fill-color: #fff !important;
-    border-color: #4cb5ba;
-
-}
-
-input:-webkit-autofill:focus {
-    outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
-    -webkit-text-fill-color: #fff !important;
-    border-color: #4cb5ba;
-}
-
-input:-webkit-autofill:hover {
-    outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
-    -webkit-text-fill-color: #fff !important;
-    border-color: #4cb5ba;
-}
-
-input:-webkit-autofill:active {
-    outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px #1C2937 inset;
-    -webkit-text-fill-color: #fff !important;
-    border-color: #4cb5ba;
-}
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
     position: relative;
     min-height: 100%;
-}
-
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
 }
 
 .footer {
@@ -132,4 +80,28 @@ body > .container {
 
 code {
     font-size: 80%;
+}
+
+::-webkit-scrollbar {
+    max-width: 10px !important;
+    max-height: 10px !important;
+    background: #181818 !important;
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+    background: #181818 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px !important;
+    background: rgba(80,80,80,.6) !important;
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+    background: #181818 !important;
+}
+
+::selection {
+    background-color: #000 !important;
+    color: #fff !important;
 }
