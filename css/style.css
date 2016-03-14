@@ -48,25 +48,6 @@ code {
     font-size: 80%;
 }
 
-::-webkit-scrollbar {
-    max-width: 10px !important;
-    max-height: 10px !important;
-    background: #181818 !important;
-}
-
-::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
-    background: #181818 !important;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 5px !important;
-    background: rgba(80,80,80,.6) !important;
-}
-
-::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
-    background: #181818 !important;
-}
-
 ::selection {
     background-color: #45acff !important;
     color: #fff !important;

@@ -38,7 +38,9 @@ if (!empty($_SESSION['user'])) {
             <div class="panel-heading">
                 <h3 class="panel-title">Login</h3>
             </div>
-            <div class="panel-body"><p>Yuki's stage opdracht owo!</p>
+            <div class="panel-body">
+                <div class="col-centered"><p>Yuki's stage opdracht owo!</p>
+                </div>
             </div>
         </div>
     </div>

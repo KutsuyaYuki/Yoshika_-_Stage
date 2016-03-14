@@ -2,6 +2,13 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="On explicit save action" serverName="Yoshika - Stage" uploadOnCheckin="0902cbae-ef9b-4b89-adbf-fa8e397b538d">
     <serverData>
+      <paths name="Locally - Stage">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Yoshika - Stage">
         <serverdata>
           <mappings>

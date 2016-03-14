@@ -102,21 +102,21 @@ thead > tr > th > div.th-inner.sortable.both {
 
 .search > .form-control:focus {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
+    -webkit-box-shadow: 0 0 0 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }
 
 .search > .form-control:hover {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
+    -webkit-box-shadow: 0 0 0 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }
 
 .search > .form-control:active {
     outline: none;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(21, 21, 21, 1) inset;
+    -webkit-box-shadow: 0 0 0 1000px rgba(21, 21, 21, 1) inset;
     -webkit-text-fill-color: #fff !important;
     border-color: #4cb5ba;
 }
@@ -136,26 +136,28 @@ div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > 
     color: #fff;
 }
 
-body > div.wrapper > div.content > div > div.panel-body > div > div.bootstrap-table > div.fixed-table-container > div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > button{
+body > div.wrapper > div.content > div > div.panel-body > div > div.bootstrap-table > div.fixed-table-container > div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > button {
     line-height: 10px;
     margin-top: 1px;
     margin-bottom: 1px;
 }
 
-div.fixed-table-container > div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul{
+div.fixed-table-container > div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul {
     background-color: rgba(21, 21, 21, 1);
     border: 1px solid rgba(35, 35, 35, 1);
     line-height: 8px;
 }
-div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul > li.active > a{
+
+div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul > li.active > a {
     color: #a8a8a8;
 }
-div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul > li > a{
+
+div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul > li > a {
     background-color: rgba(21, 21, 21, 1);
     color: #fff;
 }
 
-div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul > li > a:hover{
+div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > span > ul > li > a:hover {
     background-color: rgba(69, 69, 69, 0.8);
     color: #fff;
 }
@@ -167,47 +169,47 @@ div.fixed-table-pagination > div.pull-left.pagination-detail > span.page-list > 
 
 div.fixed-table-pagination > div.pull-right.pagination > ul > li.page-number.active > a {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #214e75;
+    background-color: rgba(21, 21, 21, 1);
+    border-color: rgb(0, 0, 0);
 }
 
 /* The buttons */
 div.fixed-table-pagination > div.pull-right.pagination > ul > li:nth-child(odd) > a {
     color: #fff;
-    background-color: #204d73;
-    border-color: #214e75;
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(0, 0, 0);
 }
 
 div.fixed-table-pagination > div.pull-right.pagination > ul > li:nth-child(even) > a {
     color: #fff;
-    background-color: #204d73;
-    border-color: #214e75;
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(0, 0, 0);
 }
 
 div.fixed-table-pagination > div.pull-right.pagination > ul > li:nth-child(odd) > a:hover {
     color: #fff;
-    background-color: #173752;
-    border-color: #214e75;
+    background-color: rgba(21, 21, 21, 1);
+    border-color: rgb(0, 0, 0);
 }
 
 div.fixed-table-pagination > div.pull-right.pagination > ul > li:nth-child(even) > a:hover {
     color: #fff;
-    background-color: #173752;
-    border-color: #214e75;
+    background-color: rgba(21, 21, 21, 1);
+    border-color: rgb(0, 0, 0);
 }
 
 /* END OF: The buttons */
 
 div.fixed-table-pagination > div.pull-right.pagination > ul > li.page-next > a {
     color: #fff;
-    background-color: #204d73;
-    border-color: #214e75;
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(0, 0, 0);
 }
 
 div.fixed-table-pagination > div.pull-right.pagination > ul > li.page-pre > a {
     color: #fff;
-    background-color: #204d73;
-    border-color: #214e75;
+    background-color: rgb(40, 40, 40);
+    border-color: rgb(0, 0, 0);
 }
 
 /* END OF: Navigation Styles (at the bottom of the table)*/
@@ -232,12 +234,13 @@ div > span.value:before {
     content: ": ";
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .table-responsive {
         width: 100%;
         margin-bottom: 15px;
         overflow-y: hidden;
         -ms-overflow-style: -ms-autohiding-scrollbar;
-        border: 0px solid black; !important;
+        border: 0 solid black;
+    !important;
     }
 }

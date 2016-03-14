@@ -50,11 +50,11 @@ if (empty($_SESSION['user'])) {
                     $statement->execute(array(':user' => htmlentities($_SESSION['user']['user'])));
                     $row = $statement->fetch(); // Use fetchAll() if you want all results, or just iterate over the statement, since it implements Iterator
                     echo $row['auth'];*/
-                    if (htmlentities($_SESSION['user']['auth']) == 0) {
+                    if (htmlentities($_SESSION['user']['auth']) == "Gebruiker") {
+                    } elseif (htmlentities($_SESSION['user']['auth']) == "Administratie") {
                         include("logic/classes/table_naw.php");
-                    } elseif (htmlentities($_SESSION['user']['auth']) == 1) {
+                    } elseif (htmlentities($_SESSION['user']['auth']) == "Eigenaar") {
                         include("logic/classes/table_naw.php");
-                    } elseif (htmlentities($_SESSION['user']['auth']) == 2) {
                     } elseif (htmlentities($_SESSION['user']['auth']) == 3) {
                     }
                     ?></p>

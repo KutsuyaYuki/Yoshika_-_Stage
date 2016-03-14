@@ -2,108 +2,9 @@
 
 $thisPage = "Edit";
 
-$selected_id = "";
-
 // First we execute our common code to connection to the database and start the session
 require("logic/common.php");
 
-global $db;
-
-// This if statement checks to determine whether the registration form has been submitted
-// If it has, then the registration code is run, otherwise the form is displayed
-if (!empty($_POST)) {
-
-    /* Contact */
-
-    try {
-        $sql_contact = "UPDATE contact SET
-            woonplaats = :woonplaats,
-            woonadres = :woonadres,
-            postadres = :postadres,
-            postcode = :postcode,
-            email = :email,
-            telefoonnummer = :telefoonnummer,
-            mobielenummer = :mobielenummer
-            WHERE id = :id";
-        $stmt_contact = $db->prepare($sql_contact);
-        $stmt_contact->bindParam(':woonplaats', $_POST['woonplaats'], PDO::PARAM_STR);
-        $stmt_contact->bindParam(':woonadres', $_POST['woonadres'], PDO::PARAM_STR);
-        $stmt_contact->bindParam(':postadres', $_POST['postadres'], PDO::PARAM_STR);
-        $stmt_contact->bindParam(':postcode', $_POST['postcode'], PDO::PARAM_STR);
-        $stmt_contact->bindParam(':email', $_POST['email'], PDO::PARAM_STR);
-        $stmt_contact->bindParam(':telefoonnummer', $_POST['telefoonnummer'], PDO::PARAM_STR);;
-        $stmt_contact->bindParam(':mobielenummer', $_POST['mobielenummer'], PDO::PARAM_STR);
-        $stmt_contact->bindParam(':id', $selected_id, PDO::PARAM_STR);
-        $stmt_contact->execute($sql_contact);
-    }
-    catch(PDOException $e) {
-        echo $sql_contact . "<br>" . $e->getMessage();
-    }
-
-    /* End Contact */
-
-    /* Category */
-
-    try {
-        $sql_category = "UPDATE category SET
-            categorie = :categorie,
-            functie = :functie
-            WHERE id = :id";
-        $stmt_category = $db->prepare($sql_category);
-        $stmt_category->bindParam(':categorie', $_POST['categorie'], PDO::PARAM_STR);
-        $stmt_category->bindParam(':functie', $_POST['functie'], PDO::PARAM_STR);
-        $stmt_category->bindParam(':id', $selected_id, PDO::PARAM_STR);
-        $stmt_category->execute($sql_category);
-    }
-    catch(PDOException $e) {
-        echo $sql_category . "<br>" . $e->getMessage();
-    }
-
-    /* End Category */
-
-    /* NAW */
-
-    try {
-        $sql_naw = "UPDATE naw SET
-            voorletters = :voorletters,
-            roepnaam = :roepnaam,
-            tussenvoegsel = :tussenvoegsel,
-            achternaam = :achternaam,
-            geslacht = :geslacht,
-            bsn = :bsn,
-            begindatum = :begindatum,
-            einddatum = :einddatum,
-            notitie = :notitie,
-            geboortedatum = :geboortedatum
-            WHERE id = :id";
-        $stmt_naw = $db->prepare($sql_naw);
-        $stmt_naw->bindParam(':voorletters', $_POST['voorletters'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':roepnaam', $_POST['roepnaam'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':tussenvoegsel', $_POST['tussenvoegsel'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':achternaam', $_POST['achternaam'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':geslacht', $_POST['geslacht'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':bsn', $_POST['bsn'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':begindatum', $_POST['begindatum'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':einddatum', $_POST['einddatum'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':notitie', $_POST['notitie'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':geboortedatum', $_POST['geboortedatum'], PDO::PARAM_STR);
-        $stmt_naw->bindParam(':id', $selected_id, PDO::PARAM_STR);
-        $stmt_naw->execute($sql_naw);
-    }
-    catch(PDOException $e) {
-        echo $sql_naw . "<br>" . $e->getMessage();
-    }
-
-    /* End NAW */
-
-// This redirects the user back to the login page after they register
-    header("Location: private.php");
-
-// Calling die or exit after performing a redirect using the header function
-// is critical.  The rest of your PHP script will continue to execute and
-// will be sent to the user if you do not die or exit.
-    die("Redirecting to private.php");
-}
 ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -131,7 +32,7 @@ if (!empty($_POST)) {
                 FROM naw
                 INNER JOIN contact ON naw.contact_id = contact.id
                 INNER JOIN category ON naw.category_id = category.id
-                WHERE naw.id = '.$selected_id.';');
+                WHERE naw.id = ' . $selected_id . ';');
 
     while ($row = $sql->fetch()) {
         $id = $row['id'];
@@ -199,7 +100,8 @@ if (!empty($_POST)) {
 
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" value="<?php echo $email; ?>">
+                            <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email"
+                                   value="<?php echo $email; ?>">
                             <input type="woonplaats" name="woonplaats" class="form-control" id="inputWoonplaats"
                                    placeholder="Woonplaats" value="<?php echo $woonplaats; ?>">
                             <input type="woonadres" name="woonadres" class="form-control" id="inputWoonadres"
@@ -245,14 +147,29 @@ if (!empty($_POST)) {
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2">
-                            <select name="categorie" id="inputCategory" class="form-control" value="<?php echo $category; ?>">
-                                <option value="Eigenaar">Eigenaar</option>
-                                <option value="Administratie">Administratie</option>
-                                <option value="Werknemer">Werknemer</option>
+                            <select name="categorie" id="inputCategory" class="form-control">
+                                <?php
+                                if ($categorie == "Eigenaar") {
+                                    echo '<option value="Eigenaar" selected>Eigenaar</option>';
+                                    echo '<option value="Administratie">Administratie</option>';
+                                    echo '<option value="Gebruiker">Gebruiker</option>';
+                                } else if ($categorie == "Administratie"){
+                                    echo '<option value="Eigenaar">Eigenaar</option>';
+                                    echo '<option value="Administratie" selected>Administratie</option>';
+                                    echo '<option value="Gebruiker">Gebruiker</option>';
+                                } else if ($categorie == "Gebruiker"){
+                                    echo '<option value="Eigenaar">Eigenaar</option>';
+                                    echo '<option value="Administratie">Administratie</option>';
+                                    echo '<option value="Gebruiker" selected>Gebruiker</option>';
+                                }
+                                ?>
                             </select>
-                            <select name="functie" id="inputFunctie" class="form-control" value="<?php echo $functie; ?>">
-                                <option value="ICT">ICT</option>
-                                <option value="Stuff">Stuff</option>
+                            <select name="functie" id="inputFunctie" class="form-control">
+                                <?php
+                                if ($functie == "ICT") {
+                                    echo '<option value="ICT" selected>ICT</option>';
+                                }
+                                ?>
                             </select>
                         </div>
                     </div>
