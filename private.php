@@ -42,14 +42,10 @@ if (empty($_SESSION['user'])) {
     <div class="content">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Private page</h3>
+                <h3 class="panel-title"><?php echo "Private page"; ?></h3>
             </div>
             <div class="panel-body">
                 <p><?php
-                    /*$statement = $db->prepare("select * from users where user = :user");
-                    $statement->execute(array(':user' => htmlentities($_SESSION['user']['user'])));
-                    $row = $statement->fetch(); // Use fetchAll() if you want all results, or just iterate over the statement, since it implements Iterator
-                    echo $row['auth'];*/
                     if (htmlentities($_SESSION['user']['auth']) == "Gebruiker") {
                         include("logic/classes/table_timesheet.php");
                     } elseif (htmlentities($_SESSION['user']['auth']) == "Administratie") {
