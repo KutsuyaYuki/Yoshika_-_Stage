@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="Yoshika - Stage" uploadOnCheckin="0902cbae-ef9b-4b89-adbf-fa8e397b538d">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="Yoshika - Stage">
     <serverData>
       <paths name="Locally - Stage">
         <serverdata>
@@ -17,7 +17,6 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="Yoshika - Stage" />
     <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>
