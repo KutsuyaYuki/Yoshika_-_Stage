@@ -51,6 +51,7 @@ if (empty($_SESSION['user'])) {
                     $row = $statement->fetch(); // Use fetchAll() if you want all results, or just iterate over the statement, since it implements Iterator
                     echo $row['auth'];*/
                     if (htmlentities($_SESSION['user']['auth']) == "Gebruiker") {
+                        include("logic/classes/table_timesheet.php");
                     } elseif (htmlentities($_SESSION['user']['auth']) == "Administratie") {
                         include("logic/classes/table_naw.php");
                     } elseif (htmlentities($_SESSION['user']['auth']) == "Eigenaar") {
