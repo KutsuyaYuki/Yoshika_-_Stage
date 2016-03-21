@@ -42,10 +42,33 @@ if (empty($_SESSION['user'])) {
     <div class="content">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><?php echo "Private page"; ?></h3>
-            </div>
-            <div class="panel-body">
-                <p><?php
+                <?php
+                if (htmlentities($_SESSION['user']['auth']) == "Gebruiker") {
+                    echo "<h3 class=\"panel-title\">Gebruiker - Page</h3>";
+                    echo "</div>";
+                    echo "<div class=\"panel-body\">";
+                    echo "<p>";
+                    include("logic/classes/table_timesheet.php");
+                    echo "</p>";
+                } elseif (htmlentities($_SESSION['user']['auth']) == "Administratie") {
+                    echo "<h3 class=\"panel-title\">Administratie - Page</h3>";
+                    echo "</div>";
+                    echo "<div class=\"panel-body\">";
+                    echo "<p>";
+                    include("logic/classes/table_naw.php");
+                    echo "</p>";
+                } elseif (htmlentities($_SESSION['user']['auth']) == "Eigenaar") {
+                    echo "<h3 class=\"panel-title\">Eigenaar - Page</h3>";
+                    echo "</div>";
+                    echo "<div class=\"panel-body\">";
+                    echo "<p>";
+                    include("logic/classes/table_naw.php");
+                    echo "</p>";
+                } elseif (htmlentities($_SESSION['user']['auth']) == 3) {
+                }
+                ?>
+
+                <?php/*
                     if (htmlentities($_SESSION['user']['auth']) == "Gebruiker") {
                         include("logic/classes/table_timesheet.php");
                     } elseif (htmlentities($_SESSION['user']['auth']) == "Administratie") {
@@ -53,8 +76,8 @@ if (empty($_SESSION['user'])) {
                     } elseif (htmlentities($_SESSION['user']['auth']) == "Eigenaar") {
                         include("logic/classes/table_naw.php");
                     } elseif (htmlentities($_SESSION['user']['auth']) == 3) {
-                    }
-                    ?></p>
+                    }*/
+                    ?>
             </div>
         </div>
     </div>
